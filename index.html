@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HangMan By Niraj</title>
+    <link rel="stylesheet" href="style.css">
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+
+  
+    <div class="main">
+        <div class="gameinst">
+            <h1>Hangman Game</h1>
+            <p><strong>How to play : </strong>Guess the right word using Hint</p>
+            <p><strong>Rule : </strong> If you guess wrong letter 6 times you will lose the game </p>
+        </div>
+
+      <div class="game-modal">
+        <div class="content">
+          <img src="Images/lost.gif" alt="lostImg" srcset="" />
+          <h4>Game Over !</h4>
+          <p>The correct word was : <b>rainbow</b></p>
+          <button class="play-again">Play Again</button>
+        </div>
+      </div>
+      <div class="container">
+        <div class="hangman-box">
+          <img src="Images/hangman-0.svg" alt="hangmanImg" srcset="" />
+          <h1>Hangman Game</h1>
+        </div>
+        <div class="game-box">
+          <ul class="word-display"></ul>
+          <h4 class="hint-text">
+            Hint :
+            <b> </b>
+          </h4>
+          <h4 class="guesses-text">
+            Incorrect guesses :
+            <b>0 / 6</b>
+          </h4>
+          <div class="keyboard"></div>
+        </div>
+      </div>
+
+      <div class="contact-section">
+        <h4>Made with <span>&#9829; </span> By Niraj</h4>
+        <div class="social">
+          <a href="https://www.instagram.com/ayee_niraj/"><i class="ri-instagram-fill"></i></a>
+          <a href="https://github.com/niraj-verma07"><i class="ri-github-fill"></i></a>
+          <a href="https://www.linkedin.com/in/niraj-vermaa/"><i class="ri-linkedin-box-fill"></i></a>
+        </div>
+      </div>
+    </div>
+
+    <script src="word-list.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
